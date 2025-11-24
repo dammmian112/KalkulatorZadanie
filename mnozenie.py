@@ -12,32 +12,18 @@ def mnozenie(a, b):
     return a * b
 
 
-def odejmowanie(a, b):
-    """
-    Funkcja odejmująca drugą liczbę od pierwszej.
-    """
-    return a - b
-
-
 def main():
     print("=" * 40)
-    print("KALKULATOR - ODEJMOWANIE / MNOŻENIE")
+    print("KALKULATOR - MNOŻENIE")
     print("=" * 40)
     
     try:
         liczba1 = float(input("\nPodaj pierwszą liczbę: "))
         liczba2 = float(input("Podaj drugą liczbę: "))
         
-        # Odejmowanie
-        wynik_odejmowania = odejmowanie(liczba1, liczba2)
+        wynik = mnozenie(liczba1, liczba2)
         print("\n" + "-" * 40)
-        print(f"Wynik odejmowania: {liczba1} - {liczba2} = {wynik_odejmowania}")
-        print("-" * 40)
-        
-        # Mnożenie
-        wynik_mnozenia = mnozenie(liczba1, liczba2)
-        print("\n" + "-" * 40)
-        print(f"Wynik mnożenia: {liczba1} * {liczba2} = {wynik_mnozenia}")
+        print(f"Wynik mnożenia: {liczba1} * {liczba2} = {wynik}")
         print("-" * 40)
         
     except ValueError:
