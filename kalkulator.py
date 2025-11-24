@@ -1,45 +1,33 @@
+def dodaj(a, b):
+    """Funkcja dodaje dwie liczby i zwraca wynik"""
+    return a + b
+
 def odejmowanie(a, b):
-    """
-    Funkcja odejmująca drugą liczbę od pierwszej.
-    
-    Args:
-        a (float): Pierwsza liczba (odjemna)
-        b (float): Druga liczba (odjemnik)
-    
-    Returns:
-        float: Wynik odejmowania (a - b)
-    """
+    """Funkcja odejmująca drugą liczbę od pierwszej"""
     return a - b
 
-
 def main():
-    """
-    Główna funkcja kalkulatora z funkcją odejmowania.
-    """
+    """Prosty kalkulator z funkcjami dodawania i odejmowania"""
     print("=" * 40)
-    print("KALKULATOR + ODEJMOWANIE")
+    print("KALKULATOR - DODAWANIE I ODEJMOWANIE")
     print("=" * 40)
-    
+
     try:
-        # Pobieranie pierwszej liczby
         liczba1 = float(input("\nPodaj pierwszą liczbę: "))
-        
-        # Pobieranie drugiej liczby
         liczba2 = float(input("Podaj drugą liczbę: "))
         
-        # Wykonanie odejmowania
-        wynik = odejmowanie(liczba1, liczba2)
+        wynik_dodawanie = dodaj(liczba1, liczba2)
+        wynik_odejmowanie = odejmowanie(liczba1, liczba2)
         
-        # Wyświetlenie wyniku
         print("\n" + "-" * 40)
-        print(f"Wynik: {liczba1} - {liczba2} = {wynik}")
+        print(f"{liczba1} + {liczba2} = {wynik_dodawanie}")
+        print(f"{liczba1} - {liczba2} = {wynik_odejmowanie}")
         print("-" * 40)
         
     except ValueError:
         print("\nBłąd! Proszę podać poprawne liczby.")
     except Exception as e:
         print(f"\nWystąpił błąd: {e}")
-
 
 if __name__ == "__main__":
     main()
