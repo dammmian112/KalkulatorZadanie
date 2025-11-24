@@ -9,7 +9,7 @@ def odejmowanie(a, b):
     Returns:
         float: Wynik odejmowania (a - b)
     """
-    return a + b
+    return a - b
 
 
 def main():
@@ -17,7 +17,7 @@ def main():
     Główna funkcja kalkulatora z funkcją odejmowania.
     """
     print("=" * 40)
-    print("KALKULATOR - ODEJMOWANIE")
+    print("KALKULATOR + ODEJMOWANIE")
     print("=" * 40)
     
     try:
