@@ -11,7 +11,6 @@ def mnozenie(a, b):
     """
     return a * b
 
-
 def main():
     print("=" * 40)
     print("KALKULATOR - MNOŻENIE")
