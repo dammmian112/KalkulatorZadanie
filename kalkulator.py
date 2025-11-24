@@ -9,7 +9,7 @@ def odejmowanie(a, b):
     Returns:
         float: Wynik odejmowania (a - b)
     """
-    return a - b
+    return a + b
 
 
 def main():
